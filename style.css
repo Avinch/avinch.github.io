@@ -20,7 +20,7 @@
     color:white;
 }
 
-@media(max-width:1300px){
+@media(max-width:1250px){
     .split{
         padding:calc(5%);
     }
@@ -30,11 +30,13 @@
     }
 }
 
-@media(min-width: 1300px){
+@media(min-width: 1250px){
     .split{
         width: calc(50%);
         position: relative;
         height: 100vh;
+        
+        padding: calc(5%);
     }
 
     .div1:after, .div2:before {
@@ -52,12 +54,12 @@
     .div2:before {
         right: 100%;
         border-bottom: 100vh solid #1d1f21;
-        border-left: 50px solid transparent;
+        border-left: 80px solid transparent;
     }
     
     .div1{
         float: left;
-        padding-left: calc(5%);
+        padding: calc(5%);
     }
 
     .div2{
