@@ -1,27 +1,71 @@
-html{
-	color: white;
-	background-color: #1d1f21;
-	font-family: 'Roboto', sans-serif;
+/* THANKS TO https://stackoverflow.com/questions/31312754/two-divs-split-with-diagonal-line-css */
+
+.split {
+    min-height: 100px;
 }
 
-.container{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	text-align: center;
+.div1 {
+    background: rgb(9,0,164);
+    background: linear-gradient(212deg, rgba(9,0,164,1) 0%, rgba(0,212,255,1) 100%);
+    
 }
 
-h2, h3{
-	font-family: 'Rubik', sans-serif;
-	font-weight: normal;
+.v-centre{
+    display:flex;
+    align-items:center;
 }
 
-a{
-	color:inherit;
-	text-decoration: none;
+.div2 {
+    background:#1d1f21;
+    color:white;
 }
 
+@media(max-width:1300px){
+    .split{
+        padding:calc(5%);
+    }
 
-h2{
-	color: #6c9ef8;
+    .div2{
+        height:100vh;
+    }
+}
+
+@media(min-width: 1300px){
+    .split{
+        width: calc(50%);
+        position: relative;
+        height: 100vh;
+    }
+
+    .div1:after, .div2:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+    }
+    .div1:after {
+        left: 100%;
+        border-top: 100px solid transparent;
+        border-right: 100vh solid transparent;
+    }
+    .div2:before {
+        right: 100%;
+        border-bottom: 100vh solid #1d1f21;
+        border-left: 50px solid transparent;
+    }
+    
+    .div1{
+        float: left;
+        padding-left: calc(5%);
+    }
+
+    .div2{
+        float: right;
+    }
+
+    .v-centre-lg{
+        display:flex;
+        align-items:center;
+    }
 }
