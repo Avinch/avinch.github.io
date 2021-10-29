@@ -102,3 +102,7 @@ p {
 	font-size: var(--pt-type-16);
 	font-weight: 500;
 }
+
+i {
+	font-weight: normal;
+}
