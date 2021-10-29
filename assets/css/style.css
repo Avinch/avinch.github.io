@@ -33,6 +33,9 @@ body {
 	--pt-type-36: 2.25rem;
 	--pt-type-42: 2.625rem;
 	--pt-type-48: 3rem;
+	/* Letter spacing */
+	--neg-1: -0.063rem;
+	--neg-2: -0.125rem;
 	/* Colors */
 	--blue-og: #005CE7;
 	--blue-light-og: #21AAEF;
@@ -58,4 +61,44 @@ body {
 
 .flx-jc-fe {
 	justify-content: flex-end;
+}
+
+/* Headings, subheadings, paragraph, links */
+h1 {
+	font-size: var(--pt-type-48);
+	font-weight: 500;
+	letter-spacing: var(--neg-2);
+}
+
+h2 {
+	font-size: var(--pt-type-30);
+	font-weight: 500;
+	letter-spacing: var(--neg-2);
+}
+
+h3 {
+	font-size: var(--pt-type-24);
+	font-weight: 400;
+	letter-spacing: var(--neg-1);
+	line-height: 2.125rem;
+}
+
+p {
+	font-size: var(--pt-type-16);
+	line-height: var(--pt-type-24);
+}
+
+.smlRegLink {
+	font-size: var(--pt-type-14);
+	font-weight: 400;
+}
+
+.smlBoldLink{
+	font-size: var(--pt-type-14);
+	font-weight: 700;
+}
+
+.navlink {
+	font-size: var(--pt-type-16);
+	font-weight: 500;
 }
