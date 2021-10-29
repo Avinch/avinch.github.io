@@ -58,6 +58,10 @@ body {
 	flex-direction: column;
 }
 
+.flx-dir-row {
+	flex-direction: row;
+}
+
 .flx-ai-stretch {
 	align-items: stretch;
 }
@@ -115,6 +119,11 @@ body {
   .col-3 {
     width: 24.99999999%;
   }
+}
+
+.container {
+	max-width: 1366px;
+	margin: 0 auto;
 }
 
 /* Headings, subheadings, paragraph, links */
