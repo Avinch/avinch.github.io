@@ -66,6 +66,10 @@ body {
 	justify-content: flex-end;
 }
 
+.flx-jc-sb {
+	justify-content: space-between;
+}
+
 /* Headings, subheadings, paragraph, links */
 h1 {
 	font-size: var(--pt-type-48);
