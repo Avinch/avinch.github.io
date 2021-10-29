@@ -13,10 +13,16 @@ body {
 	height: 100%;
 }
 
+body {
+	font-family: 'DM Sans', sans-serif;
+}
+
 /* Global variables */
 :root {
 	/* 8pt grid */
 	--pt8: 0.5rem;
+	/* Font family */
+	--dm-sans: 'DM Sans', sans-serif;
 	/* Font sizes */
 	--pt-type-14: 0.875rem;
 	--pt-type-16: 1rem;
