@@ -28,8 +28,10 @@ body {
 	--pt-type-42: 2.625rem;
 	--pt-type-48: 3rem;
 	/* Colors */
-	--blue-og: #002eda;
-	--torquoise-og: #2cceff;
+	--blue-og: #005CE7;
+	--blue-light-og: #21AAEF;
+	--dark-gray-og: #17191a;
+	--white-og: #FCFCFC;
 	/* Transitions */
 	--easeOutExpo: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
