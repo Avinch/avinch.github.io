@@ -50,6 +50,18 @@ body {
 	display: flex;
 }
 
+.flx-wrap {
+	flex-wrap: wrap;
+}
+
+.flx-dir-col {
+	flex-direction: column;
+}
+
+.flx-ai-stretch {
+	align-items: stretch;
+}
+
 .flx-ai-c {
 	align-items: center;
 }
@@ -68,6 +80,36 @@ body {
 
 .flx-jc-sb {
 	justify-content: space-between;
+}
+
+/* Gutter spacing */
+.gutterSml-lr {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/* Grid */
+/* Desktop */
+.col-12 {
+  width: 100%;
+}
+/* Mobile & tablets */
+@media screen and (min-width: 544px) {
+  .col-6 {
+    width: 49.99999998%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .col-4 {
+    width: 33.33333332%;
+  }
+}
+
+@media screen and (min-width: 1012px) {
+  .col-3 {
+    width: 24.99999999%;
+  }
 }
 
 /* Headings, subheadings, paragraph, links */
