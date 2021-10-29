@@ -84,8 +84,13 @@ body {
 
 /* Gutter spacing */
 .gutterSml-lr {
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: var(--pt-type-16);
+	padding-right: var(--pt-type-16);
+}
+
+.gutterMed-lr {
+	padding-left:  var(--pt-type-18);
+	padding-right: var(--pt-type-18);
 }
 
 /* Grid */
