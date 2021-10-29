@@ -46,6 +46,10 @@ body {
 }
 
 /* Flex */
+.flx {
+	display: flex;
+}
+
 .flx-ai-c {
 	display: flex;
 	align-items: center;
