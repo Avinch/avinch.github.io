@@ -1,10 +1,189 @@
+/* Reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'DM Sans', sans-serif;
+}
+
+/* Global variables */
 :root {
+	/* 8pt grid */
+	--pt8: 0.5rem;
+	/* Font family */
+	--dm-sans: 'DM Sans', sans-serif;
+	/* Font sizes */
+	--pt-type-14: 0.875rem;
+	--pt-type-16: 1rem;
+	--pt-type-18: 1.125rem;
+	--pt-type-20: 1.25rem;
+	--pt-type-24: 1.5rem;
+	--pt-type-30: 1.875rem;
+	--pt-type-36: 2.25rem;
+	--pt-type-42: 2.625rem;
+	--pt-type-48: 3rem;
+	--pt-type-96: 6rem;
+	/* Letter spacing */
+	--neg-1: -0.063rem;
+	--neg-2: -0.125rem;
 	/* Colors */
 	--blue-og: #005CE7;
 	--blue-light-og: #21AAEF;
 	--dark-gray-og: #17191a;
 	--light-gray-og: #2F3538;
 	--white-og: #FCFCFC;
+	--lime-green-og: #1DDF5F;
+	/* Transitions */
+	--easeOutExpo: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Flex */
+.flx {
+	display: flex;
+}
+
+.flx-wrap {
+	flex-wrap: wrap;
+}
+
+.flx-dir-col {
+	flex-direction: column;
+}
+
+.flx-dir-row {
+	flex-direction: row;
+}
+
+.flx-ai-stretch {
+	align-items: stretch;
+}
+
+.flx-ai-c {
+	align-items: center;
+}
+
+.flx-jc-fs {
+	justify-content: flex-start;
+}
+
+.flx-jc-c {
+	justify-content: center;
+}
+
+.flx-jc-fe {
+	justify-content: flex-end;
+}
+
+.flx-jc-sb {
+	justify-content: space-between;
+}
+
+/* Gutter spacing */
+.gutterSml-lr {
+	padding-left: var(--pt-type-16);
+	padding-right: var(--pt-type-16);
+}
+
+.gutterMed-lr {
+	padding-left:  var(--pt-type-18);
+	padding-right: var(--pt-type-18);
+}
+
+/* Grid */
+/* Desktop */
+.col-12 {
+  width: 100%;
+}
+/* Mobile & tablets */
+@media screen and (min-width: 544px) {
+  .col-6 {
+    width: 49.99999998%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .col-4 {
+    width: 33.33333332%;
+  }
+}
+
+@media screen and (min-width: 1012px) {
+  .col-3 {
+    width: 24.99999999%;
+  }
+}
+
+.container {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+/* Headings, subheadings, paragraph, links */
+h1 {
+	font-size: var(--pt-type-48);
+	font-weight: 500;
+	letter-spacing: var(--neg-2);
+}
+
+h2 {
+	font-size: var(--pt-type-30);
+	font-weight: 500;
+	letter-spacing: var(--neg-2);
+}
+
+h3 {
+	font-size: var(--pt-type-24);
+	font-weight: 400;
+	letter-spacing: var(--neg-1);
+	line-height: 2.125rem;
+}
+
+p {
+	font-size: var(--pt-type-16);
+	line-height: var(--pt-type-24);
+}
+
+.smlRegLink {
+	font-size: var(--pt-type-14);
+	font-weight: 400;
+}
+
+.smlBoldLink{
+	font-size: var(--pt-type-14);
+	font-weight: 700;
+}
+
+.navlink {
+	font-size: var(--pt-type-16);
+	font-weight: 500;
+}
+
+.title {
+	font-size: var(--pt-type-18);
+	font-weight: 700;
+}
+
+i {
+	font-weight: normal;
+}
+
+.underline {
+	display: inline-block;
+	content: '';
+	width: inherit;
+	height: 1px;
+	background-color: transparent;
 }
 
 /* Container */
@@ -27,7 +206,7 @@
 
 /* Button types */
 .outlineDarkBtn {
-	border: 0.125rem solid var(--light-gray-og);
+	border: 0.125rem solid transparent;
 }
 
 /* Main navigation */
@@ -69,4 +248,64 @@ header h1,
 header h3 {
 	color: var(--white-og);
 	margin-bottom: var(--pt-type-48);
+}
+
+header .outlineDarkBtn {
+	border-color: var(--light-gray-og);
+}
+
+/* Main section */
+main {
+	/* Gradient background */
+	background: rgb(0, 92, 231);
+	background: -moz-linear-gradient(0deg, rgba(0, 92, 231, 1) 35%, rgba(33, 170, 239, 1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(0, 92, 231, 1) 35%, rgba(33, 170, 239, 1) 100%);
+	background: linear-gradient(0deg, rgba(0, 92, 231, 1) 35%, rgba(33, 170, 239, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005ce7", endColorstr="#21aaef", GradientType=1);
+	/* Padding */
+	padding: var(--pt-type-96) 0;
+}
+
+main h2 {
+	text-align: center;
+	color: var(--white-og);
+	margin-bottom: var(--pt-type-16);
+}
+
+main h2 i {
+	margin-right: var(--pt8);
+}
+
+main .outlineDarkBtn {
+	border-color: var(--white-og);
+}
+
+main .contentTitle {
+	margin-bottom: calc(var(--pt8) * 9);
+}
+
+/* Cards */
+.repoCard {
+	background-color: var(--white-og);
+	padding: var(--pt-type-24);
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.repoCard_tTp {
+	color: var(--dark-gray-og);
+	margin-bottom: calc(var(--pt8) * 5);
+}
+
+.repoCard_Middle {
+	margin-bottom: calc(var(--pt8) * 5);
+}
+
+.repoCard_Bottom .smlBoldLink:nth-child(1),
+.repoCard_Bottom i {
+	margin-right: var(--pt8);
+}
+
+.repoCard_Bottom .smlBoldLink:nth-child(1) i {
+	color: var(--lime-green-og);
 }
