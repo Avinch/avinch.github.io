@@ -3,5 +3,70 @@
 	--blue-og: #005CE7;
 	--blue-light-og: #21AAEF;
 	--dark-gray-og: #17191a;
+	--light-gray-og: #2F3538;
 	--white-og: #FCFCFC;
+}
+
+/* Container */
+.container {
+	padding: 0 calc(var(--pt8) * 4);
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	padding: 0.75rem var(--pt-type-24);
+	color: var(--white-og);
+	border-radius: 3.125rem;
+	cursor: pointer;
+}
+
+.btn i {
+	margin-right: var(--pt-type-24);
+}
+
+/* Button types */
+.outlineDarkBtn {
+	border: 0.125rem solid var(--light-gray-og);
+}
+
+/* Main navigation */
+.navMain {
+	background-color: var(--dark-gray-og);
+}
+
+nav {
+	padding-top: var(--pt-type-48);
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--white-og);
+}
+
+nav ul:nth-child(2) a {
+	margin-left: var(--pt-type-48);
+	font-weight: 500;
+}
+
+.logoMain {
+	font-size: var(--pt-type-18);
+	font-weight: 700;
+	letter-spacing: var(--neg-1);
+}
+
+/* Header section */
+header {
+	background-color: var(--dark-gray-og);
+	padding: calc(var(--pt8) * 12) 0;
+}
+
+header h1,
+header h3 {
+	color: var(--white-og);
+	margin-bottom: var(--pt-type-48);
 }
