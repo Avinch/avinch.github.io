@@ -100,6 +100,11 @@ body {
 	padding-right: var(--pt-type-18);
 }
 
+.gutterMed-tb {
+	padding-top:  var(--pt-type-18);
+	padding-bottom: var(--pt-type-18);
+}
+
 /* Grid */
 /* Desktop */
 .col-12 {
