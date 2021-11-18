@@ -111,13 +111,13 @@ body {
   width: 100%;
 }
 /* Mobile & tablets */
-@media screen and (min-width: 544px) {
+@media screen and (min-width: 800px) {
   .col-6 {
     width: 49.99999998%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1140px) {
   .col-4 {
     width: 33.33333332%;
   }
@@ -214,6 +214,14 @@ i {
 	border: 0.125rem solid transparent;
 }
 
+.btnSolidDark {
+	background-color: #17191a;
+}
+
+.btnSolidDark i {
+	color: var(--white-og) !important;
+}
+
 /* Main navigation */
 .navMain {
 	background-color: var(--dark-gray-og);
@@ -289,12 +297,27 @@ main .contentTitle {
 	margin-bottom: calc(var(--pt8) * 9);
 }
 
+/* Header */
+.cardContent .btn,
+.cardContent .btn i {
+	transition: var(--easeOutExpo);
+}
+
+.cardContent .btn:hover.outlineDarkBtn {
+	border-color: var(--blue-og);
+}
+
+.cardContent .btn:hover.btn i {
+	transform: rotate(45deg);
+}
+
 /* Cards */
 .repoCard {
+	width: 100%;
+	flex: 1 0 auto;
 	background-color: var(--white-og);
 	padding: var(--pt-type-24);
 	border-radius: 6px;
-	overflow: hidden;
 }
 
 .repoCard_tTp {
@@ -304,6 +327,13 @@ main .contentTitle {
 
 .repoCard_Middle {
 	margin-bottom: calc(var(--pt8) * 5);
+	height: 100%;
+	max-height: 300px;
+}
+
+.repoCard_Middle p {
+	font-size: var(--pt-type-14);
+	color: var(--light-gray-og);
 }
 
 .repoCard_Bottom .smlBoldLink:nth-child(1),
@@ -313,4 +343,27 @@ main .contentTitle {
 
 .repoCard_Bottom .smlBoldLink:nth-child(1) i {
 	color: var(--lime-green-og);
+}
+
+.repoCard_Bottom {
+	position: relative;
+}
+
+.repoCard_Bottom .btn {
+	position: absolute;
+	right: 0;
+	bottom: -3rem;
+	z-index: 2;
+}
+
+.repoCard_Bottom i {
+	transition: var(--easeOutExpo);
+}
+
+.repoCard_Bottom .btn:hover.btn i {
+	padding-right: var(--pt-type-20);
+}
+
+.repoCardWrapper.gutterMed-tb {
+	padding-bottom: calc(var(--pt-type-18) * 2) !important;
 }
