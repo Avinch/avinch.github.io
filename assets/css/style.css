@@ -294,7 +294,7 @@ main .outlineDarkBtn {
 }
 
 main .contentTitle {
-	margin-bottom: calc(var(--pt8) * 9);
+	margin-bottom: calc(var(--pt8) * 3);
 }
 
 /* Header */
@@ -366,4 +366,8 @@ main .contentTitle {
 
 .repoCardWrapper.gutterMed-tb {
 	padding-bottom: calc(var(--pt-type-18) * 2) !important;
+}
+
+.cardWrapper_End .btn {
+	margin-top: calc(var(--pt-type-18) * 3);
 }
