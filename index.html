@@ -21,235 +21,205 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-	<div class="navMain">
-		<div class="container">
-			<nav class="flx flx-ai-c flx-jc-sb">
-				<ul>
-					<li>
-						<a class="logoMain" href="" aria-label="samjas">samjas</a>
-					</li>
-				</ul>
-				<ul class="flx flx-ai-c">
-					<li>
-						<a href="" aria-label="Work">Work</a>
-					</li>
-					<li>
-						<a href="" aria-label="Contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	<header>
-		<div class="container">
-			<div class="flx flex-wrap flx-ai-c flx-jc-fs">
-				<div class="cardWrapper flx flx-dir-row col-12 col-6">
-					<div class="cardContent">
-						<h1 class="flx flx-dir-col">
-							<span>> Software developer</span>
-							<span>> Tech enthusiast</span>
-						</h1>
-						<h3>Junior developer based in Leeds UK, mostly working on .NET things. Proud world record holder of most
-							unfinished projects.</h3>
-						<div class="btn outlineDarkBtn">
-							<p class="smlBoldLink"><i class="fas fa-rocket"></i> Explore Samjas</p>
-						</div>
-					</div>
-				</div>
-				<div class="cardWrapper flx flx-dir-row col-12 col-6 flx-jc-fe">
-					<div class="cardContent">
-						<img src="/assets/img/svg/languages-diagram.svg" alt="Samjas Languages">
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
 	<main>
-		<div class="container">
-			<div class="contentTitle flx flx-ai-c flx-jc-c flx-dir-col">
-				<h2><i class="fas fa-code-branch"></i> Pinned Repositories</h2>
+		<header data-aos="fade" class="navMain">
+			<div class="container">
+				<nav data-aos="fade-down" class="flx flx-ai-c flx-jc-sb">
+					<ul>
+						<li>
+							<a class="logoMain" href="" aria-label="samjas">samjas</a>
+						</li>
+					</ul>
+					<ul class="flx flx-ai-c">
+						<li>
+							<a href="" aria-label="Contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<!-- Card wrapper -->
-			<div class="flx flx-wrap flx-dir-row flx-jc-fs ">
-				<!-- Start cards -->
-				<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
-					<div class="repoCard flx flx-dir-col">
-						<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
-							<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
-							<p class="title">SteamNotifier</p>
-						</div>
-						<div class="repoCard_Middle">
-							<p>Lightweight background program to notify you when Steam has started downloading something</p>
-						</div>
-						<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
-							<div class="repocard_Tags flx flx-ai-c">
-								<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
-								<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
+		</header>
+		<section class="hero">
+			<div class="container">
+				<div class="cardWrapper_Main flx flex-wrap flx-ai-c flx-jc-fs">
+					<div class="cardWrapper flx col-12 col-6">
+						<div class="cardContent">
+							<h1 class="flx flx-dir-col">
+								<span data-aos="fade-up">> Software developer</span>
+								<span data-aos="fade-up" data-aos-delay="300">> Tech enthusiast</span>
+							</h1>
+							<h3 data-aos="fade-up" data-aos-delay="400">Junior developer based in Leeds UK, mostly working on .NET
+								things. Proud world record holder of most
+								unfinished projects.</h3>
+							<div data-aos="fade-up" data-aos-delay="500" id="exploreBtn" class="btn outlineDarkBtn">
+								<p class="smlBoldLink"><i class="fas fa-rocket"></i> Explore Samjas</p>
 							</div>
-							<a href="https://github.com/Avinch/SteamNotifier" target="_blank">
-								<div class="btn btnSolidDark">
-									<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+						</div>
+					</div>
+					<div class="cardWrapper flx col-12 col-6 flx-jc-fe">
+						<div class="cardContent">
+							<!-- Start badges -->
+							<div class="flx">
+								<div data-aos="fade-down" data-aos-delay="500" class="flx flx-ai-c">
+									<div data-tilt data-tilt-glare="true" data-tilt-max-glare="0.75" data-tilt-max="45" class="c1">
+										<img src="assets/img/svg/python-badge.svg" alt="">
+									</div>
 								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
-					<div class="repoCard flx flx-dir-col">
-						<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
-							<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
-							<p class="title">Budgie</p>
-						</div>
-						<div class="repoCard_Middle">
-							<p>Little budgeting webapp</p>
-						</div>
-						<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
-							<div class="repocard_Tags flx flx-ai-c">
-								<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
-							</div>
-							<a href="https://github.com/Avinch/Budgier" target="_blank">
-								<div class="btn btnSolidDark">
-									<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+								<div class="flx flx-ai-c flx-dir-col">
+									<div data-tilt data-tilt-glare="true" data-tilt-max-glare="0.75" data-tilt-max="45" class="c2">
+										<img data-aos="fade-down" data-aos-delay="700" src="assets/img/svg/dotnet-badge.svg" alt="">
+									</div>
+									<div data-tilt data-tilt-glare="true" data-tilt-max-glare="0.75" data-tilt-max="45" class="c3">
+										<img data-aos="fade-down" data-aos-delay="900" src="assets/img/svg/csharp-badge.svg" alt="">
+									</div>
 								</div>
-							</a>
+								<div data-aos="fade-down" data-aos-delay="1100" class="flx flx-ai-c">
+									<div data-tilt data-tilt-glare="true" data-tilt-max-glare="0.75" data-tilt-max="45" class="c4">
+										<img src="assets/img/svg/js-badge.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<!---->
 						</div>
 					</div>
 				</div>
-				<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
-					<div class="repoCard flx flx-dir-col">
-						<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
-							<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
-							<p class="title">RemCon</p>
-						</div>
-						<div class="repoCard_Middle">
-							<p>Web portal to remotely control aspects of the host machine</p>
-						</div>
-						<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
-							<div class="repocard_Tags flx flx-ai-c">
-								<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
-								<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
-							</div>
-							<a href="https://github.com/Avinch/Budgier" target="_blank">
-							<div class="btn btnSolidDark">
-								<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
-							</div>
-							</a>
-						</div>
-					</div>
+		</section>
+		<section id="scrollHere" class="content">
+			<div class="container">
+				<div data-aos="fade-down" data-aos-delay="500" class="contentTitle flx flx-ai-c flx-jc-c flx-dir-col">
+					<h2><i class="fas fa-code-branch"></i> Pinned Repositories</h2>
 				</div>
-				<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
-					<div class="repoCard flx flx-dir-col">
-						<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
-							<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
-							<p class="title">CctvClient</p>
-						</div>
-						<div class="repoCard_Middle">
-							<p>Basic hacked together WinForms client for RTSP feeds </p>
-						</div>
-						<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
-							<div class="repocard_Tags flx flx-ai-c">
-								<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
-								<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
+				<!-- Card wrapper -->
+				<div data-aos="fade-up" class="flx flx-wrap flx-dir-row flx-jc-fs ">
+					<!-- Start cards -->
+					<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
+						<div class="repoCard flx flx-dir-col">
+							<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
+								<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
+								<p class="title">SteamNotifier</p>
 							</div>
-							<div class="btn btnSolidDark">
-								<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+							<div class="repoCard_Middle">
+								<p>Lightweight background program to notify you when Steam has started downloading something</p>
+							</div>
+							<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
+								<div class="repocard_Tags flx flx-ai-c">
+									<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
+									<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
+								</div>
+								<a href="https://github.com/Avinch/SteamNotifier" target="_blank">
+									<div class="btn btnSolidDark">
+										<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
-					<div class="repoCard flx flx-dir-col">
-						<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
-							<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
-							<p class="title">SteamNotifier</p>
-						</div>
-						<div class="repoCard_Middle">
-							<p>Lightweight background program to notify you when Steam has started downloading something.</p>
-						</div>
-						<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
-							<div class="repocard_Tags flx flx-ai-c">
-								<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
-								<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
+					<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
+						<div class="repoCard flx flx-dir-col">
+							<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
+								<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
+								<p class="title">Budgie</p>
 							</div>
-							<div class="btn btnSolidDark">
-								<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+							<div class="repoCard_Middle">
+								<p>Little budgeting webapp</p>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
-					<div class="repoCard flx flx-dir-col">
-						<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
-							<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
-							<p class="title">SteamNotifier</p>
-						</div>
-						<div class="repoCard_Middle">
-							<p>Lightweight background program to notify you when Steam has started downloading something.</p>
-						</div>
-						<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
-							<div class="repocard_Tags flx flx-ai-c">
-								<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
-								<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
-							</div>
-							<div class="btn btnSolidDark">
-								<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+							<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
+								<div class="repocard_Tags flx flx-ai-c">
+									<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
+								</div>
+								<a href="https://github.com/Avinch/Budgie" target="_blank">
+									<div class="btn btnSolidDark">
+										<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
-					<div class="repoCard flx flx-dir-col">
-						<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
-							<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
-							<p class="title">SteamNotifier</p>
-						</div>
-						<div class="repoCard_Middle">
-							<p>Lightweight background program to notify you when Steam has started downloading something.</p>
-						</div>
-						<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
-							<div class="repocard_Tags flx flx-ai-c">
-								<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
-								<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
+					<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
+						<div class="repoCard flx flx-dir-col">
+							<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
+								<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
+								<p class="title">RemCon</p>
 							</div>
-							<div class="btn btnSolidDark">
-								<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+							<div class="repoCard_Middle">
+								<p>Web portal to remotely control aspects of the host machine</p>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
-					<div class="repoCard flx flx-dir-col">
-						<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
-							<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
-							<p class="title">SteamNotifier</p>
-						</div>
-						<div class="repoCard_Middle">
-							<p>Lightweight background program to notify you when Steam has started downloading something.</p>
-						</div>
-						<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
-							<div class="repocard_Tags flx flx-ai-c">
-								<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
-								<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
-							</div>
-							<div class="btn btnSolidDark">
-								<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+							<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
+								<div class="repocard_Tags flx flx-ai-c">
+									<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
+									<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
+								</div>
+								<a href="https://github.com/Avinch/RemCon" target="_blank">
+									<div class="btn btnSolidDark">
+										<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
+					<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
+						<div class="repoCard flx flx-dir-col">
+							<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
+								<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
+								<p class="title">CctvClient</p>
+							</div>
+							<div class="repoCard_Middle">
+								<p>Basic hacked together WinForms client for RTSP feeds </p>
+							</div>
+							<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
+								<div class="repocard_Tags flx flx-ai-c">
+									<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
+									<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
+								</div>
+								<a href="https://github.com/Avinch/CctvClient" target="_blank">
+									<div class="btn btnSolidDark">
+										<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="repoCardWrapper flx col-12 col-6 col-4 gutterMed-lr gutterMed-tb">
+						<div class="repoCard flx flx-dir-col">
+							<div class="repoCard_tTp flx flx-ai-c flx-jc-sb">
+								<img src="/assets/img/svg/repo-icon.svg" alt="Repository Book Icon">
+								<p class="title">SteamNotifier</p>
+							</div>
+							<div class="repoCard_Middle">
+								<p>Lightweight background program to notify you when Steam has started downloading something.</p>
+							</div>
+							<div class="repoCard_Bottom flx flx-ai-c flx-jc-sb">
+								<div class="repocard_Tags flx flx-ai-c">
+									<p class="smlBoldLink"><i class="fas fa-circle"></i> C#</p>
+									<P class="smlBoldLink"><i class="fas fa-star"></i> 12</P>
+								</div>
+								<a href="https://github.com/Avinch/SteamNotifier" target="_blank">
+									<div class="btn btnSolidDark">
+										<p class="smlBoldLink"><i class="fab fa-github"></i> VIEW</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- End cards -->
 				</div>
-				<!-- End cards -->
+				<!-- End card wrapper -->
+				<div class="cardWrapper_End flx flx-ai-c flx-jc-c">
+					<a href="https://github.com/Avinch?tab=repositories" target="_blank">
+						<div class="viewMore btn outlineDarkBtn">View More on GitHub</div>
+					</a>
+				</div>
 			</div>
-			<!-- End card wrapper -->
-			<div class="cardWrapper_End flx flx-ai-c flx-jc-c">
-				<a href="https://github.com/Avinch?tab=repositories" target="_blank">
-					<div class="viewMore btn outlineDarkBtn">View More on GitHub</div>
-				</a>
-			</div>
-		</div>
+		</section>
 	</main>
+	<!-- Scripts -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="assets/js/vanilla-tilt.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
 </body>
 
 </html>
