@@ -15,6 +15,7 @@ body {
 
 body {
 	font-family: 'DM Sans', sans-serif;
+	background-color: var(--dark-gray-og);
 }
 
 /* Global variables */
@@ -130,7 +131,7 @@ body {
 }
 
 .container {
-	max-width: 1366px;
+	max-width: 1600px;
 	margin: 0 auto;
 }
 
@@ -138,7 +139,7 @@ body {
 h1 {
 	font-size: var(--pt-type-48);
 	font-weight: 500;
-	letter-spacing: var(--neg-2);
+	letter-spacing: var(--neg-1);
 }
 
 h2 {
@@ -150,7 +151,6 @@ h2 {
 h3 {
 	font-size: var(--pt-type-24);
 	font-weight: 400;
-	letter-spacing: var(--neg-1);
 	line-height: 2.125rem;
 }
 
@@ -222,13 +222,16 @@ i {
 	color: var(--white-og) !important;
 }
 
+/* Header section */
+header {
+	background-color: var(--dark-gray-og);
+	padding: calc(var(--pt8) * 4);
+	border-bottom: 1px solid var(--light-gray-og);
+}
+
 /* Main navigation */
 .navMain {
 	background-color: var(--dark-gray-og);
-}
-
-nav {
-	padding-top: var(--pt-type-48);
 }
 
 nav ul {
@@ -251,24 +254,27 @@ nav ul:nth-child(2) a {
 	letter-spacing: var(--neg-1);
 }
 
-/* Header section */
-header {
+/* Hero section */
+section.hero {
+	display: flex;
+	align-items: center;
+	height: 1000px;
 	background-color: var(--dark-gray-og);
-	padding: calc(var(--pt8) * 12) 0;
+	padding: calc(var(--pt8) * 4);
 }
 
-header h1,
-header h3 {
+section.hero h1,
+section.hero h3 {
 	color: var(--white-og);
 	margin-bottom: var(--pt-type-48);
 }
 
-header .outlineDarkBtn {
+section.hero .outlineDarkBtn {
 	border-color: var(--light-gray-og);
 }
 
 /* Main section */
-main {
+section.content {
 	/* Gradient background */
 	background: rgb(0, 92, 231);
 	background: -moz-linear-gradient(0deg, rgba(0, 92, 231, 1) 35%, rgba(33, 170, 239, 1) 100%);
@@ -297,7 +303,6 @@ main .contentTitle {
 	margin-bottom: calc(var(--pt8) * 3);
 }
 
-/* Header */
 .cardContent .btn,
 .cardContent .btn i {
 	transition: var(--easeOutExpo);
@@ -309,6 +314,11 @@ main .contentTitle {
 
 .cardContent .btn:hover.btn i {
 	transform: rotate(45deg);
+}
+
+.cardContent img {
+	width: 100%;
+	max-width: 816px;
 }
 
 /* Cards */
@@ -332,7 +342,8 @@ main .contentTitle {
 }
 
 .repoCard_Middle p {
-	font-size: var(--pt-type-14);
+	font-size: var(--pt-type-16);
+	font-weight: 500;
 	color: var(--light-gray-og);
 }
 
@@ -370,4 +381,24 @@ main .contentTitle {
 
 .cardWrapper_End .btn {
 	margin-top: calc(var(--pt-type-18) * 3);
+}
+
+.c1 {
+  margin-right: 12px;
+}
+
+.c2 {
+  margin-bottom: 12px;
+}
+
+.c4 {
+  margin-left: 12px;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+	border-radius: 1rem;
+	overflow: hidden;
 }
