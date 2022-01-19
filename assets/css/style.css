@@ -321,6 +321,27 @@ main .contentTitle {
 	max-width: 816px;
 }
 
+/* Badge cards */
+.c1 {
+  margin-right: 12px;
+}
+
+.c2 {
+  margin-bottom: 12px;
+}
+
+.c4 {
+  margin-left: 12px;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
 /* Cards */
 .repoCard {
 	width: 100%;
@@ -381,24 +402,4 @@ main .contentTitle {
 
 .cardWrapper_End .btn {
 	margin-top: calc(var(--pt-type-18) * 3);
-}
-
-.c1 {
-  margin-right: 12px;
-}
-
-.c2 {
-  margin-bottom: 12px;
-}
-
-.c4 {
-  margin-left: 12px;
-}
-
-.c1,
-.c2,
-.c3,
-.c4 {
-	border-radius: 1rem;
-	overflow: hidden;
 }
