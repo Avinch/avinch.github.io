@@ -258,7 +258,7 @@ nav ul:nth-child(2) a {
 section.hero {
 	display: flex;
 	align-items: center;
-	height: 1000px;
+	height: 100vh;
 	background-color: var(--dark-gray-og);
 	padding: calc(var(--pt8) * 4);
 }
