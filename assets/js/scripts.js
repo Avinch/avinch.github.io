@@ -7,23 +7,18 @@ AOS.init({
   duration: 1000
 });
 
+// Vanilla Tilt options
+VanillaTilt.init({
+  max: 15,
+  reset: false
+});
+
 //
 const exploreBtn = document.getElementById('exploreBtn');
 const scrollHere = document.getElementById('scrollHere');
 
-exploreBtn.addEventListener('click', (e) => {
-  scrollHere.scrollIntoView({
-    behavior: 'smooth',
-  });
-});
-
 $("#exploreBtn").click(function () {
   $('html, body').animate({
     scrollTop: $("#scrollHere").offset().top
-  }, 1400);
-});
-
-VanillaTilt.init({
-  max: 15,
-  reset: false
+  }, 1000);
 });
