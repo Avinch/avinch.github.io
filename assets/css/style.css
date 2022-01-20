@@ -320,11 +320,15 @@ section.hero .outlineDarkBtn {
 		margin-bottom: var(--pt-type-30);
 	}
 	section.hero {
-		height: 1000px;
+		height: auto;
+	}
+
+	section.hero h1, section.hero h3 {
+		margin-bottom: var(--pt-type-18);
 	}
 
 	section.hero h1 {
-		font-size: var(--pt-type-24);
+		font-size: var(--pt-type-30);
 	}
 
 	section.hero h3 {
@@ -532,6 +536,10 @@ footer .copyright h2 {
 }
 
 @media screen and (max-width: 480px) {
+	.container {
+		padding: 0;
+	}
+
 	footer h2 {
 		font-size: var(--pt-type-20);
 	}
