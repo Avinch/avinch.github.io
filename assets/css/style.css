@@ -404,8 +404,17 @@ main .contentTitle {
 
 .cardWrapper_End .btn {
 	margin-top: calc(var(--pt-type-18) * 3);
+	transition: var(--easeOutExpo);
 }
 
+.cardWrapper_End .btn:hover {
+	background-color: var(--white-og);
+	color: var(--blue-og);
+}
+
+.cardWrapper_End .btn:active {
+	transform: scale(0.95);
+}
 /* Footer */
 footer {
 	background-color: var(--blue-og);
