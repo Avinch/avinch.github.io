@@ -294,6 +294,7 @@ section.hero .outlineDarkBtn {
 	section.hero {
 		height: 1200px;
 	}
+
 	section.hero h1 {
 		font-size: var(--pt-type-30);
 		line-height: var(--pt-type-48);
@@ -301,6 +302,23 @@ section.hero .outlineDarkBtn {
 	
 	section.hero h3 {
 		font-size: var(--pt-type-24);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	section.hero .cardWrapper {
+		margin-bottom: var(--pt-type-30);
+	}
+	section.hero {
+		height: 1000px;
+	}
+
+	section.hero h1 {
+		font-size: var(--pt-type-24);
+	}
+
+	section.hero h3 {
+		font-size: var(--pt-type-20);
 	}
 }
 
@@ -500,6 +518,12 @@ footer .copyright h2 {
 
 	footer h2 {
 		font-size: var(--pt-type-24);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	footer h2 {
+		font-size: var(--pt-type-20);
 	}
 }
 
