@@ -540,8 +540,34 @@ footer .copyright h2 {
 		padding: 0;
 	}
 
+	footer h1 {
+		font-size: var(--pt-type-30);
+		text-align: center;
+	}
+
 	footer h2 {
 		font-size: var(--pt-type-20);
+	}
+
+	footer .footerContent_Bundle h2 {
+		display: block;
+	}
+
+	footer nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	footer ul {
+		width: 100%;
+	}
+
+	.footerContent_Wrapper {
+		flex-direction: column;
+	}
+
+	.copyright h2 {
+		margin: var(--pt-type-48);
 	}
 }
 
