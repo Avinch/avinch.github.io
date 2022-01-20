@@ -242,6 +242,15 @@ nav ul {
 
 nav a {
 	text-decoration: none;
+}
+
+nav li {
+	font-weight: 500;
+	cursor: pointer;
+}
+
+nav a,
+nav li {
 	color: var(--white-og);
 }
 

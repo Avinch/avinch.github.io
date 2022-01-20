@@ -22,3 +22,9 @@ $("#exploreBtn").click(function () {
     scrollTop: $("#scrollHere").offset().top
   }, 1000);
 });
+
+$("#contactLink").click(function () {
+  $('html, body').animate({
+    scrollTop: $("footer").offset().top
+  }, 1000);
+});
