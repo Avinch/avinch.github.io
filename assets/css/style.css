@@ -275,6 +275,35 @@ section.hero .outlineDarkBtn {
 	border-color: var(--light-gray-og);
 }
 
+@media screen and (max-width: 1140px) {
+	section.hero .cardWrapper {
+		justify-content: center;
+		margin-bottom: var(--pt-type-96);
+	}
+
+	section.hero .cardWrapper_Main {
+		flex-direction: column-reverse;
+	}
+
+	section.hero .col-12 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	section.hero {
+		height: 1200px;
+	}
+	section.hero h1 {
+		font-size: var(--pt-type-30);
+		line-height: var(--pt-type-48);
+	}
+	
+	section.hero h3 {
+		font-size: var(--pt-type-24);
+	}
+}
+
 /* Main section */
 section.content {
 	/* Gradient background */
@@ -388,6 +417,7 @@ main .contentTitle {
 	right: 0;
 	bottom: -3rem;
 	z-index: 2;
+	transition: var(--easeOutExpo);
 }
 
 .repoCard_Bottom i {
@@ -396,6 +426,10 @@ main .contentTitle {
 
 .repoCard_Bottom .btn:hover.btn i {
 	padding-right: var(--pt-type-20);
+}
+
+.repoCard_Bottom .btn:active {
+	transform: scale(0.95);
 }
 
 .repoCardWrapper.gutterMed-tb {
@@ -457,6 +491,16 @@ footer .copyright {
 footer .copyright h2 {
 	margin-bottom: auto;
 	line-height: var(--pt-type-30);
+}
+
+@media screen and (max-width: 660px) {
+	footer h1 {
+		font-size: var(--pt-type-36);
+	}
+
+	footer h2 {
+		font-size: var(--pt-type-24);
+	}
 }
 
 footer nav ul {
