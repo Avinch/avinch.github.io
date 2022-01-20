@@ -249,14 +249,15 @@ nav li {
 	cursor: pointer;
 }
 
-nav a,
-nav li {
-	color: var(--white-og);
-}
-
 nav ul:nth-child(2) a {
 	margin-left: var(--pt-type-48);
 	font-weight: 500;
+}
+
+/* Header */
+header nav a,
+header nav li {
+	color: var(--white-og);
 }
 
 .logoMain {
@@ -542,6 +543,7 @@ footer nav ul {
 }
 
 footer nav ul a {
+	color: var(--white-og);
 	width: 50px;
 	height: 50px;
 	border-radius: 50px;
