@@ -255,9 +255,18 @@ nav ul:nth-child(2) a {
 }
 
 /* Header */
+header {
+	height: 100vh;
+	background-color: var(--dark-gray-og);
+}
+
 header nav a,
 header nav li {
 	color: var(--white-og);
+}
+
+header nav {
+	padding-bottom: calc(var(--pt8) * 12);
 }
 
 .logoMain {
@@ -267,14 +276,6 @@ header nav li {
 }
 
 /* Hero section */
-section.hero {
-	display: flex;
-	align-items: center;
-	height: 100vh;
-	background-color: var(--dark-gray-og);
-	padding: calc(var(--pt8) * 4);
-}
-
 section.hero h1,
 section.hero h3 {
 	color: var(--white-og);
