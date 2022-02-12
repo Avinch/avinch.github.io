@@ -7,11 +7,17 @@
     "type": "git",
     "url": "git+https://github.com/Sergestra/avinch.github.io.git"
   },
-  "keywords": ["portfolio", "software developer"],
+  "keywords": [
+    "portfolio",
+    "software developer"
+  ],
   "author": "Sergestra",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Sergestra/avinch.github.io/issues"
   },
-  "homepage": "https://github.com/Sergestra/avinch.github.io#readme"
+  "homepage": "https://github.com/Sergestra/avinch.github.io#readme",
+  "dependencies": {
+    "vanilla-tilt": "^1.7.2"
+  }
 }
