@@ -1,0 +1,17 @@
+{
+  "name": "avinch.github.io",
+  "version": "2.0.0",
+  "description": "Portfolio of Sam Scott, software developer and tech enthusiasts.",
+  "main": "scripts.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergestra/avinch.github.io.git"
+  },
+  "keywords": ["portfolio", "software developer"],
+  "author": "Sergestra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sergestra/avinch.github.io/issues"
+  },
+  "homepage": "https://github.com/Sergestra/avinch.github.io#readme"
+}
